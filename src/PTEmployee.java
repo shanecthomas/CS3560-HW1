@@ -15,7 +15,7 @@ public class PTEmployee extends Employee {
 
     public String toString() {
         super.toString();
-        return "nHours: " + getNHours() + "\nwages: " + getWages() + "\n";
+        return "nHours: " + this.getNHours() + "\nwages: " + this.getWages() + "\n";
     }
 
     public void setWages (int w) {
