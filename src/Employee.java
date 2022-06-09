@@ -1,18 +1,21 @@
 public class Employee {
-    public Employee () {
-        System.out.println("No parameters to create Employee!");
-    }
+
     public Employee (String n, String s, String po, Date d, float pa) {
-        ;
+        setName(n);
+        setSsn(s);
+        setPosition(po);
+        setDateOfBirth(d);
+        setPay(pa);
     }
 
     public float raise (float per) {
+        pay *=(1 + (per/100));
         return pay;
     }
 
     public String toString() {
-        return "Name: " + this.name + "\nSSN: " + this.ssn + "\nPosition: " + position +
-                "\nDate of Birth: " + dateOfBirth + "\nPay: " + pay + "\n";
+        return "Name: " + getName() + "\nSSN: " + getSsn() + "\nPosition: " + getPosition() +
+                "\nDate of Birth: " + getDateOfBirth() + "\nPay: " + getPay() + "\n";
     }
 
     public void setName (String n) {
