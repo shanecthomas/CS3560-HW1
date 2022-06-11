@@ -1,9 +1,9 @@
 public class PTEmployee extends Employee {
 
-    public PTEmployee (String n, String s, String po, Date d, int h, int w) {
+    public PTEmployee (String n, String s, String po, Date d, float h, float w) {
         super(n, s, po, d, 0);
-        nHours = h;
-        wages = w;
+        setNHours(h);
+        setWages(w);
         setPay(nHours * wages);
     }
 
@@ -14,26 +14,25 @@ public class PTEmployee extends Employee {
     }
 
     public String toString() {
-        super.toString();
-        return "nHours: " + this.getNHours() + "\nwages: " + this.getWages() + "\n";
+        return super.toString() + "nHours: " + this.getNHours() + "\nwages: " + this.getWages() + "\n";
     }
 
-    public void setWages (int w) {
+    public void setWages (float w) {
         wages = w;
     }
-    public void setNHours (int h) {
+    public void setNHours (float h) {
         nHours = h;
     }
 
-    public int getWages() {
+    public float getWages() {
         return wages;
     }
-    public int getNHours() {
+    public float getNHours() {
         return nHours;
     }
 
 
-    private int nHours;
-    private int wages;
+    private float nHours;
+    private float wages;
 
 }

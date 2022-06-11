@@ -15,7 +15,7 @@ public class Employee {
 
     public String toString() {
         return "Name: " + this.getName() + "\nSSN: " + this.getSsn() + "\nPosition: " + this.getPosition() +
-                "\nDate of Birth: " + this.getDateOfBirth() + "\nPay: " + this.getPay() + "\n";
+                "\nDate of Birth: " + this.getDateOfBirth() + "Pay: " + this.getPay() + "\n";
     }
 
     public void setName (String n) {

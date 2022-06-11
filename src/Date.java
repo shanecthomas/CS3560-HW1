@@ -18,7 +18,7 @@ public class Date {
     }
 
     public String toString() {
-        return this.month + "," + this.day + "," + this.year + "\n";
+        return this.month + ", " + this.day + ", " + this.year + "\n";
     }
 
     private boolean validate() {
